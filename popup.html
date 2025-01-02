@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>지뢰찾기</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1> 💣 💣 💣 </h1>
+    <label for="gridSize">난이도</label>
+    <select id ="gridSize">
+      <option value="10">하 (10 X 10)</option>
+      <option value="20">중 (20 X 20)</option>
+      <option value="30">상 (30 X 30)</option>
+    </select>
+    <button id="startGame">게임 시작</button>
+    <button id="retryGame" style="display:none;">다시하기</button>
+    <div class="score-board">
+      <p>최고 점수 : <span id="highScore"></span></p>
+      <p><span id="currentScore"></span></p>
+    </div>
+    <div id="gameBoard" class="board"></div>
+    <script src="game.js"></script>
+  </body>
+</html>

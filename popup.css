@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 20px;
+  width: 400px;
+  height: 600px;
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 30px;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+#currentScore, #highScore {
+  font-size: 18px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.board {
+  display: grid;
+  margin: 0 auto;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cell.revealed {
+  background-color: #fdd14e;
+}
+
+.cell.mine {
+  background-color: red;
+  background-image: url('assets/bomb.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.cell.number {
+  background-color: #fff;
+  font-weight: bold;
+  text-align: center;
+}

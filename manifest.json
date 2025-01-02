@@ -1,0 +1,14 @@
+{
+  "name": "지뢰찾기",
+  "description": "팡팡! 지뢰찾기 게임",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon16.png",
+    "default_title": "팡팡-지뢰찾기",
+    "default_width": 700,
+    "default_height": 700
+  },
+  "permissions": ["storage"]
+}
